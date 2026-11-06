@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="t d">
+  <title id="t">How an AI system goes from data to a decision</title>
+  <desc id="d">Five steps from left to right: data, training, model, output, and human check. A dashed arrow loops from human check back to data, showing that people correct and improve the system.</desc>
+  <style>
+    .box{fill:#ffffff;stroke:#1d3a57;stroke-width:2}
+    .human{fill:#16293d;stroke:#16293d;stroke-width:2.5}
+    .n{font:700 15px 'Atkinson Hyperlegible',Arial,sans-serif;fill:#1f5fa8}
+    .h{font:700 19px 'Bricolage Grotesque','Arial Black',sans-serif;fill:#14202b}
+    .s{font:15px 'Atkinson Hyperlegible',Arial,sans-serif;fill:#3a4a58}
+    .a{stroke:#1d3a57;stroke-width:2.5;fill:none}
+    .loop{stroke:#1b7356;stroke-width:2;fill:none;stroke-dasharray:7 6}
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d3a57"/></marker>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1b7356"/></marker>
+  </defs>
+  <g>
+    <rect class="box" x="10" y="40" width="150" height="120" rx="14"/>
+    <text class="n" x="28" y="70">1</text><text class="h" x="28" y="96">Data</text>
+    <text class="s" x="28" y="122">texts, images,</text><text class="s" x="28" y="142">examples</text>
+  </g>
+  <path class="a" d="M162 100H190" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="192" y="40" width="150" height="120" rx="14"/>
+    <text class="n" x="210" y="70">2</text><text class="h" x="210" y="96">Training</text>
+    <text class="s" x="210" y="122">finds patterns</text><text class="s" x="210" y="142">in the data</text>
+  </g>
+  <path class="a" d="M344 100H372" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="374" y="40" width="150" height="120" rx="14"/>
+    <text class="n" x="392" y="70">3</text><text class="h" x="392" y="96">Model</text>
+    <text class="s" x="392" y="122">stores those</text><text class="s" x="392" y="142">patterns</text>
+  </g>
+  <path class="a" d="M526 100H554" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="556" y="40" width="150" height="120" rx="14"/>
+    <text class="n" x="574" y="70">4</text><text class="h" x="574" y="96">Output</text>
+    <text class="s" x="574" y="122">the most likely</text><text class="s" x="574" y="142">answer</text>
+  </g>
+  <path class="a" d="M708 100H736" marker-end="url(#ar)"/>
+  <g>
+    <rect class="human" x="738" y="40" width="152" height="120" rx="14"/>
+    <text class="n" x="756" y="70" style="fill:#9cc3ef">5</text><text class="h" x="756" y="96" style="fill:#fff">Human check</text>
+    <text class="s" x="756" y="122" style="fill:#d9e3ee">verify, then</text><text class="s" x="756" y="142" style="fill:#d9e3ee">decide</text>
+  </g>
+  <path class="loop" d="M814 162V222H85V168" marker-end="url(#ar2)"/>
+  <text class="s" x="450" y="246" text-anchor="middle" style="fill:#1b7356">People correct mistakes and improve the data</text>
+</svg>
